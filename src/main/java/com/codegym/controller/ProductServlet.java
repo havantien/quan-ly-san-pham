@@ -32,7 +32,6 @@ public class ProductServlet extends javax.servlet.http.HttpServlet {
                 deleteProduct(request, response);
                 break;
             default:
-                viewProduct(request, response);
                 break;
         }
     }
@@ -52,6 +51,8 @@ public class ProductServlet extends javax.servlet.http.HttpServlet {
             case "delete":
                 showDelete(request, response);
                 break;
+            case"view":
+                viewProduct(request, response);
             default:
                 listProducts(request, response);
                 break;
